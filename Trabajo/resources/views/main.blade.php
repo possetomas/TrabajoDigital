@@ -17,7 +17,6 @@
 							<li><a href="/iniciosesion">Iniciar sesión</a></li>
 							<li><a href="/registro">Regístrese</a></li>
 							@endif
-							<li><a href="/main">Contacto</a></li>
 							@if (Auth::check())
 							<li>Usuario <strong style="text-transform: capitalize;">{{Auth::user()->name}} {{Auth::user()->lastname}}</li></strong>
 							<li>
@@ -113,16 +112,16 @@
 				<br>
 				<footer class="main-footer" style="position: initial">
 					<ul>
-							<li>Home</a></li>
-							<li>Quienes somos</a></li>
-							<li>Contacto</a></li>
+							<li><a href="/main">Home</a></li>
+							<li><a href="#">Quienes somos</a></li>
+							<li><a href="#">Contacto</a></li>
 							<li>Seguinos en las redes!</li>
-							<img src="./images/fb.png">
-							<img src="./images/pi.png">
-							<img src="./images/tw.png">
-							<img src="./images/in.png">
-							<img src="./images/you.png">
-							<img src="./images/tu.png">
+							<a href="https://www.facebook.com/"> <img  src="./images/fb.png"> </a>
+							<a href="https://ar.pinterest.com/"> <img src="./images/pi.png"> </a>
+							<a href="https://twitter.com/"> <img src="./images/tw.png"> </a>
+							<a href="https://www.instagram.com/"> <img src="./images/in.png"> </a>
+							<a href="https://www.youtube.com/"> <img src="./images/you.png"> </a>
+							<a href="https://www.tumblr.com/"> <img src="./images/tu.png"> </a>
 						</ul>
 				</footer>
 			</div></center>
