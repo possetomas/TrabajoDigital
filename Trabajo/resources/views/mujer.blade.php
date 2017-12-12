@@ -1,12 +1,13 @@
-
-<html><head>
-		<meta charset="utf-8">
-		<title>Pagina Inicio Cliente</title>
-		<link rel="stylesheet" type="text/css" href="{{ asset('css/cliente.css') }}">
-		<meta name="viewport" content="initial-scale=1">
-	</head>
-	<body>
-			<div class="opciones">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pagina Mujer</title>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/cliente.css') }}">
+	<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+<div class="opciones">
 				<div class="servicio">
 				<a href="/servicio">Servicio al consumidor</a></div>
 				<div style="float: right">
@@ -52,63 +53,14 @@
 				</div>
 			</div>
 <br>
-<center>
-			<div class="container">
 
-				<section class="products">
-					<article class="estilos">
 
-						<img src="./images/chi2.jpeg">
-						<h2></h2>
-						<p>
-						</p>
-						<a href="#">Ver mas de este estilo</a>
-						<br><br>
-					</article>
-					<article class="estilos">
+FALTA EL CONTENIDO 
 
-						<img src="./images/boy2.jpeg">
-						<h2></h2>
-						<p>
-						</p>
-						<a href="#">Ver mas de este estilo</a>
-						<br><br>
-					</article>
-					<article class="estilos">
 
-						<img src="./images/chi1.jpeg">
-						<h2></h2>
-						<p>
-						</p>
-						<a href="#">Ver mas de este estilo</a>
-						<br><br>
-					</article>
-					<article class="estilos">
-						<img src="./images/boy1.jpeg">
-						<h2></h2>
-						<p>
-						</p>
-						<a href="#">Ver mas de este estilo</a>
-						<br><br>
-					</article>
-					<article class="estilos">
-						<img src="./images/chi3.jpeg">
-						<h2></h2>
-						<p>
-						</p>
-						<a href="#">Ver mas de este estilo</a>
-						<br><br>
-					</article>
-					<article class="estilos">
-						<img src="./images/boy3.jpeg">
-						<h2></h2>
-						<p>
-						</p>
-						<a href="#">Ver mas de este estilo</a>
-						<br><br>
-					</article>
-				</section>
-				<br>
+
+
+
 				<footer class="main-footer" style="position: initial">
 					<ul>
 							<li><a href="/main">Home</a></li>
@@ -124,6 +76,6 @@
 						</ul>
 				</footer>
 			</div></center>
-
-
-</body></html>
+	
+</body>
+</html>

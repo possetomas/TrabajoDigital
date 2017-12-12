@@ -29,3 +29,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/hombre', 'HombreController@index');
+
+Route::get('/mujer', 'MujerController@index');
+
+Route::get('/sale', 'SaleController@rebaja');
+
+Route::get('/historia', 'QuienesController@somos');
+
+Route::get('/servicio', 'ServicioController@consumidor');
+
+Route::get('/contacto', 'ContactoController@index');
+
+Route::get('/carrito', 'CarritoController@compras');
+
+
