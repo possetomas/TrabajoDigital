@@ -1,0 +1,47 @@
+.productos {
+	margin: 0 auto
+}
+
+.prod-div {
+	display: inline-flex;
+}
+
+.categorias {
+	margin-left: 135px; margin-right: 65px;
+}
+
+.texto {
+	text-align: left;
+	font-size: 13px;
+}
+
+.fotos {
+	display: inline-table; margin: 0 auto; margin-right: 50px;
+	margin-left: -80px;
+	margin-top: -20px;
+}
+
+.fotofil {
+	margin-left: 80px; margin-right: 80px; display: inline-flex;
+
+}
+
+.foto {
+	height: 300px; width: 220px;
+	margin-right:20px;
+	margin-left:20px;
+	margin-bottom: 15px;
+	margin-top: 25px
+}
+
+.textfot {
+	width: 200px; margin: 0 auto; margin-right: 0px; margin-left: 0px
+}
+
+.todoprod {
+	margin-top: 30px;
+}
+
+.main-footer {
+	margin-top: 50px;
+}
