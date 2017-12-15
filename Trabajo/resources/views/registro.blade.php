@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Pagina Inicio Cliente</title>
+		<title>Fouomé</title>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/cliente.css') }}">
 		<meta name="viewport" content="initial-scale=1">
         <script type="text/javascript" src="registro.js"></script>
@@ -17,7 +17,7 @@
                         <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}" style="margin-top: 10px;">
                             <label for="name" class="col-md-4 control-label">Nombre:</label>
 
                             <div class="col-md-6">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}" style="margin-top: 10px;">
                             <label for="lastname" class="col-md-4 control-label">Apellido:</label>
 
                             <div class="col-md-6">
@@ -45,7 +45,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}" style="margin-top: 10px;"v>
                             <label for="email" class="col-md-4 control-label">Mail:</label>
 
                             <div class="col-md-6">
@@ -59,12 +59,14 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div style="margin-top: 10px;">
                             Sexo:<br>
+                            <div style="margin-top: 10px;">
                             <input type="hidden" name="sexo" value="off">
                             Masculino<input type="radio" name="sexo" value="masculino">
                             Femenino<input type="radio" name="sexo" value="femenino">
                             Otro<input type="radio" name="sexo" value="otro">
+                            </div>
                             <br>
                             <span style="color:red;"></span>
 
@@ -79,7 +81,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}" style="margin-top: 10px;">
                             <label for="password" class="col-md-4 control-label">Contraseña:</label>
 
                             <div class="col-md-6">
@@ -94,7 +96,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 10px;">
                             <label for="password-confirm" class="col-md-4 control-label">Confirmar Contraseña:</label>
 
                             <div class="col-md-6">
@@ -102,14 +104,20 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div style="margin-top: 10px;">
                         <h6>Acepta los terminos y condiciones?
                         <input type="hidden" name="terminos" value="off">
+                        @if ($errors->has('terminos'))
+                                <br>
+                                    <span class="help-block">
+                                        <p style="color: red">{{ $errors->first('terminos') }}</p>
+                                    </span>
+                                @endif
                         <input type="checkbox" name="terminos"></h6>
                         <span style="color:red; position: relative; bottom: 23px;"></span>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 10px;">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Register

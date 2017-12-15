@@ -48,6 +48,6 @@ Route::get('/carrito', 'CarritoController@compras');
 
 Route::post('/carrito', 'CarritoController@descartar');
 
-Route::get('/busqueda', 'BusquedaController@buscar')->name('busqueda');
+Route::get('/busqueda', 'BusquedaController@index')->name('busqueda');
 
 

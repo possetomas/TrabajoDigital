@@ -68,6 +68,11 @@
 // css carrrrrro termina aca
 
 
+.form-group span {
+  color: red;
+}
+
+
 
 *{
 	box-sizing: border-box;

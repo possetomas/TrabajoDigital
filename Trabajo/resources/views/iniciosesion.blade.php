@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Pagina Inicio Cliente</title>
+		<title>Fouomé</title>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/cliente.css') }}">
 		<meta name="viewport" content="initial-scale=1">
 	</head>
@@ -14,14 +14,16 @@
 
 
 		<div class="rounded">
+
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}" style="margin-top: 10px;">
                             <label for="email" class="col-md-4 control-label">Mail:</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                            <br>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -31,12 +33,12 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}" style="margin-top: 10px;">
                             <label for="password" class="col-md-4 control-label">Constraseña:</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password" required>
-
+                            <br>
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -45,7 +47,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 10px;">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
@@ -55,7 +57,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 10px;">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Login
