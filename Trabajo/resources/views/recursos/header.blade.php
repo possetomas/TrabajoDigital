@@ -32,7 +32,8 @@
 			<div class="top-bar">
 				<header class="main-header">
 					<center>
-						<a href="{{ route('main') }}"><img src="./images/titulo.png"></center><a>
+						<a href="{{ route('main') }}"><img src="./images/titulo.png"></a>
+					</center>
 				</header>
 				<div>
 					<center>
