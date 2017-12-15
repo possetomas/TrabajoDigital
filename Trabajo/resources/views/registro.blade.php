@@ -6,6 +6,7 @@
 		<title>Pagina Inicio Cliente</title>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/cliente.css') }}">
 		<meta name="viewport" content="initial-scale=1">
+        <script type="text/javascript" src="registro.js"></script>
 	</head>
 	<body>
 @include('recursos/header')
@@ -13,7 +14,7 @@
 <center>
 
 <div class="rounded">
-                          <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                        <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -117,6 +118,8 @@
                         </div>
                     </form>
 </div>
+<br>
+<br>
 @include('recursos/footer')
 			</div></center>
 	</body>

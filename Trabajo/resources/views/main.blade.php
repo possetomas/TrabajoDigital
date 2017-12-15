@@ -14,60 +14,67 @@
 
 				<section class="products">
 					<article class="estilos">
-
-						<img src="./images/chi2.jpeg">
+						<a href="mujer">
+						<img style="opacity: 1" src="./images/chi2.jpeg">
 						<h2></h2>
 						<p>
 						</p>
-						<a href="#">Ver mas de este estilo</a>
+						Ver mas de este estilo</a>
 						<br><br>
 					</article>
 					<article class="estilos">
 
-						<img src="./images/boy2.jpeg">
+						<a href="hombre">
+						<img style="opacity: 1" src="./images/boy2.jpeg">
 						<h2></h2>
 						<p>
 						</p>
-						<a href="#">Ver mas de este estilo</a>
+						Ver mas de este estilo</a>
 						<br><br>
 					</article>
 					<article class="estilos">
 
-						<img src="./images/chi1.jpeg">
+						<a href="mujer">
+						<img style="opacity: 1" src="./images/chi1.jpeg">
 						<h2></h2>
 						<p>
 						</p>
-						<a href="#">Ver mas de este estilo</a>
+						Ver mas de este estilo</a>
 						<br><br>
 					</article>
 					<article class="estilos">
-						<img src="./images/boy1.jpeg">
+
+						<a href="hombre">
+						<img style="opacity: 1" src="./images/boy1.jpeg">
 						<h2></h2>
 						<p>
 						</p>
-						<a href="#">Ver mas de este estilo</a>
+						Ver mas de este estilo</a>
 						<br><br>
 					</article>
 					<article class="estilos">
-						<img src="./images/chi3.jpeg">
+
+						<a href="mujer">
+						<img style="opacity: 1" src="./images/chi3.jpeg">
 						<h2></h2>
 						<p>
 						</p>
-						<a href="#">Ver mas de este estilo</a>
+						Ver mas de este estilo</a>
 						<br><br>
 					</article>
 					<article class="estilos">
-						<img src="./images/boy3.jpeg">
+
+						<a href="hombre">
+						<img style="opacity: 1" src="./images/boy3.jpeg">
 						<h2></h2>
 						<p>
 						</p>
-						<a href="#">Ver mas de este estilo</a>
+						Ver mas de este estilo</a>
 						<br><br>
 					</article>
 				</section>
 				<br>
-@include('recursos/footer')
 			</div></center>
-
+@include('recursos/footer')
 
 </body></html>

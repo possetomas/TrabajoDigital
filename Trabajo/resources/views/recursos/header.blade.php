@@ -11,7 +11,7 @@
 							<li><a href="/registro">Regístrese</a></li>
 							@endif
 							@if (Auth::check())
-							<li>Usuario <strong style="text-transform: capitalize;">{{Auth::user()->name}} {{Auth::user()->lastname}}</li></strong>
+							<li>Usuario <a href="carrito"><strong style="text-transform: capitalize;">{{Auth::user()->name}} {{Auth::user()->lastname}}</li></strong></a>
 							<li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -32,17 +32,25 @@
 			<div class="top-bar">
 				<header class="main-header">
 					<center>
-						<img src="./images/titulo.png"></center>
+						<a href="{{ route('main') }}"><img src="./images/titulo.png"></center><a>
 				</header>
 				<div>
 					<center>
 					<ul>
+					<form action="{{ route('busqueda') }}" style="margin: 0 auto">
 					<p><a href="/mujer">Mujer</a></p>
 					<p><a href="/hombre">Hombre</a></p>
 					<p><a href="/sale" style="color: white">Sale</a></p>
-					<p><u><input type="text" name="busqueda" placeholder="Buscá tu producto..."></u><img style="width: 20px; position: relative; right: 10px; top: 4px" src="./images/busq.png">
+					
+					<p><u><input type="text" name="busqueda" placeholder="Buscá tu producto..."><input type="submit" name="" value="" style="visibility: hidden"></u>
 					</p>
-					<p><a href="/carrito">Tu carrito<img style="width: 20px; position: relative; left: 5px; top: 4px" src="./images/carrito.svg"></a></p></ul>
+					<p>
+						<a href="/carrito">Tu carrito<img style="width: 20px; position: relative; left: 5px; top: 4px" src="./images/carrito.svg">
+					</form>
+					<span class="carritoNum">{{ Session::has('carro') ? Session::get('carro')->cantidadTotal : ''}}</span>
+					</a>
+					</p>
+					</ul>
 					</center>
 				</div>
 			</div>

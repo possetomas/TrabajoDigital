@@ -14,64 +14,62 @@
 <center class="todoprod">
 <section class="productos">
 	<div class="prod-div">
-        <aside class="categorias">
-	        <div class="texto">
-		        <ul>
-			        <h1>Nuevos arrivos</h1>
-			        <li>Ropa</li>
-			        <li>Calzado y accesorios</li>
-		        </ul>
-		        <ul>
-			        <h1>Ofertas</h1>
-			        <li>3 por 2</li>
-			        <li>El trato semanal</li>
-		        </ul>
-		        <ul>
-			        <h1>Comprá por producto</h1>
-			        <li>Remeras</li>
-			        <li>Pantalones</li>
-			        <li>Shorts</li>
-			        <li>Jeans</li>
-			        <li>Buzos</li>
-			        <li>Camperas</li>
-			        <li>Accesorios</li>
-		        </ul>
-		        <ul>
-			        <h1>Comprá por concepto</h1>
-			        <li>Moderno</li>
-			        <li>Clasico</li>
-			        <li>Trendy</li>
-			        <li>Calidad Premium</li>
-		        </ul>
-	        <div>
-        </aside>
+@include('recursos/categorias')
+
 
         <aside>
         <div class="fotos">
         <div class="fotofil">
 
-        	@foreach($productos as $productoChunk)
+            @foreach($productos as $productoChunk)
 
-        	<div>
-        	<img class="foto" src="{{ $productoChunk->urlfoto }}"
-        	onmouseover="this.src='{{ $productoChunk->urlfoto2 }}'"
-        	onmouseout="this.src='{{ $productoChunk->urlfoto }}'">
-        	<br>
-        	<h5 class="textfot"><a>Agregar al carro</a></h5>
-        	</div>
+            <div>
+            <img class="foto" src="{{ $productoChunk->urlfoto2 }}"
+            onmouseover="this.src='{{ $productoChunk->urlfoto }}'"
+            onmouseout="this.src='{{ $productoChunk->urlfoto2 }}'">
+            <br>
+            <h5 class="textfot"><a>{{ $productoChunk->nombre }}</a></h5>
+            <h5 class="textfot"><a>{{ $productoChunk->precio }}</a></h5>
+            @if ( empty ($producto) )
+            <a href="{{ route('producto.agregarAlCarro', ['id' => $productoChunk->id]) }}"><img style="width: 20px; position: relative; left: 90px; top: -80px;" src="./images/carrito.svg"></a>
+            @endif
+            </div>
 
 
-        	
-        	@if ($productoChunk->idProducto % 3 == 0)
-        	</div>
-        	<br>
-        	<div class="fotofil">
-        	@endif
+            
+            @if ($productoChunk->id % 3 == 0)
+            </div>
+            <br>
+            <div class="fotofil">
+            @endif
       
-        	@endforeach
+            @endforeach
+            @foreach($productos as $productoChunk)
+
+            <div>
+            <img class="foto" src="{{ $productoChunk->urlfoto2 }}"
+            onmouseover="this.src='{{ $productoChunk->urlfoto }}'"
+            onmouseout="this.src='{{ $productoChunk->urlfoto2 }}'">
+            <br>
+            <h5 class="textfot"><a>{{ $productoChunk->nombre }}</a></h5>
+            <h5 class="textfot"><a>{{ $productoChunk->precio }}</a></h5>
+            @if ( empty ($producto) )
+            <a href="{{ route('producto.agregarAlCarro', ['id' => $productoChunk->id]) }}"><img style="width: 20px; position: relative; left: 90px; top: -80px;" src="./images/carrito.svg"></a>
+            @endif
+            </div>
+
+
+            
+            @if ($productoChunk->id % 3 == 0)
+            </div>
+            <br>
+            <div class="fotofil">
+            @endif
+      
+            @endforeach
         </div>
         </div>
-    	</aside>
+        </aside>
 
     	
         </div>

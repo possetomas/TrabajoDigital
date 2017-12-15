@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/main', 'HomeController@index');
+Route::get('/main', 'HomeController@index')->name('main');
 
 Route::get('/iniciosesion', 'InicioController@index');
 
@@ -29,11 +29,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/hombre', 'HombreController@index');
+Route::get('/hombre', 'HombreController@index')->name('hombre');
+Route::get('/agregar/hombre/{id}', ['uses' => 'HombreController@getAddToCart', 'as' => 'producto.agregarAlCarro']);
 
-Route::get('/mujer', 'MujerController@index');
+Route::get('/sale', 'SaleController@rebaja')->name('sale');
+Route::get('/agregar/sale/{id}', ['uses' => 'SaleController@getAddToCart', 'as' => 'producto.agregarAlCarro']);
 
-Route::get('/sale', 'SaleController@rebaja');
+Route::get('/mujer', 'MujerController@index')->name('mujer');
+Route::get('/agregar/producto/{id}', ['uses' => 'MujerController@getAddToCart', 'as' => 'producto.agregarAlCarro']);
 
 Route::get('/historia', 'QuienesController@somos');
 
@@ -42,5 +45,9 @@ Route::get('/servicio', 'ServicioController@consumidor');
 Route::get('/contacto', 'ContactoController@index');
 
 Route::get('/carrito', 'CarritoController@compras');
+
+Route::post('/carrito', 'CarritoController@descartar');
+
+Route::get('/busqueda', 'BusquedaController@buscar')->name('busqueda');
 
 

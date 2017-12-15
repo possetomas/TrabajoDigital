@@ -15,9 +15,9 @@ class ProductosTableSeeder extends Seeder
 // Productos mujer
 
         $producto = new \App\Producto([
-        	'idProducto' => '1',
+        	'id' => '1',
         	'codigo' => 'M01',
-        	'precio' => '$800',
+        	'precio' => '800',
             'urlfoto' => './images/productos/mujer/01aa.jpeg',
             'urlfoto2' => './images/productos/mujer/01bb.jpeg',
             'nombre' => 'Remera manga larga a rayas',
@@ -25,9 +25,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '2',
+            'id' => '2',
             'codigo' => 'M02',
-            'precio' => '$920',
+            'precio' => '920',
             'urlfoto' => './images/productos/mujer/02aa.jpeg',
             'urlfoto2' => './images/productos/mujer/02bb.jpeg',
             'nombre' => 'Sweater con cuello',
@@ -35,9 +35,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '3',
+            'id' => '3',
             'codigo' => 'M03',
-            'precio' => '$700',
+            'precio' => '700',
             'urlfoto' => './images/productos/mujer/03aa.jpeg',
             'urlfoto2' => './images/productos/mujer/03bb.jpeg',
             'nombre' => 'Sweater',
@@ -45,9 +45,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '4',
+            'id' => '4',
             'codigo' => 'M04',
-            'precio' => '$850',
+            'precio' => '850',
             'urlfoto' => './images/productos/mujer/04aa.jpeg',
             'urlfoto2' => './images/productos/mujer/04bb.jpeg',
             'nombre' => 'Sweater cuello en V',
@@ -55,9 +55,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '5',
+            'id' => '5',
             'codigo' => 'M05',
-            'precio' => '$1100',
+            'precio' => '1100',
             'urlfoto' => './images/productos/mujer/05aa.jpeg',
             'urlfoto2' => './images/productos/mujer/05bb.jpeg',
             'nombre' => 'Pantalon floreado',
@@ -65,9 +65,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '6',
+            'id' => '6',
             'codigo' => 'M06',
-            'precio' => '$780',
+            'precio' => '780',
             'urlfoto' => './images/productos/mujer/06aa.jpeg',
             'urlfoto2' => './images/productos/mujer/06bb.jpeg',
             'nombre' => 'Pantalon de jean',
@@ -79,9 +79,9 @@ class ProductosTableSeeder extends Seeder
 // Productos hombre
 
         $producto = new \App\Producto([
-            'idProducto' => '7',
+            'id' => '7',
             'codigo' => 'H01',
-            'precio' => '$1300',
+            'precio' => '1300',
             'urlfoto' => './images/productos/hombre/01aa.jpeg',
             'urlfoto2' => './images/productos/hombre/01bb.jpeg',
             'nombre' => 'Pantalon',
@@ -89,9 +89,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '8',
+            'id' => '8',
             'codigo' => 'H02',
-            'precio' => '$950',
+            'precio' => '950',
             'urlfoto' => './images/productos/hombre/02aa.jpeg',
             'urlfoto2' => './images/productos/hombre/02bb.jpeg',
             'nombre' => 'Chomba',
@@ -99,9 +99,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '9',
+            'id' => '9',
             'codigo' => 'H03',
-            'precio' => '$1300',
+            'precio' => '1300',
             'urlfoto' => './images/productos/hombre/03aa.jpeg',
             'urlfoto2' => './images/productos/hombre/03bb.jpeg',
             'nombre' => 'Combo remeras',
@@ -109,9 +109,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '10',
+            'id' => '10',
             'codigo' => 'H04',
-            'precio' => '$700',
+            'precio' => '700',
             'urlfoto' => './images/productos/hombre/04aa.jpeg',
             'urlfoto2' => './images/productos/hombre/04bb.jpeg',
             'nombre' => 'Short',
@@ -119,9 +119,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '11',
+            'id' => '11',
             'codigo' => 'H05',
-            'precio' => '$600',
+            'precio' => '600',
             'urlfoto' => './images/productos/hombre/05aa.jpeg',
             'urlfoto2' => './images/productos/hombre/05bb.jpeg',
             'nombre' => 'Remera',
@@ -129,9 +129,9 @@ class ProductosTableSeeder extends Seeder
         ]);
         $producto->save();
         $producto = new \App\Producto([
-            'idProducto' => '12',
+            'id' => '12',
             'codigo' => 'H06',
-            'precio' => '$950',
+            'precio' => '950',
             'urlfoto' => './images/productos/hombre/06aa.jpeg',
             'urlfoto2' => './images/productos/hombre/06bb.jpeg',
             'nombre' => 'Sweater',

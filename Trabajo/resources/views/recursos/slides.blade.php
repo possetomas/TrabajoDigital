@@ -1,21 +1,22 @@
+<script type="text/javascript" src="/js/script.js"></script>
 			<div class="slideshow-container">
 
 				<!-- Full-width images with number and caption text -->
 				<div class="mySlides fade">
 					<div class="numbertext"></div>
-					<img src="./images/yes.jpg" style="width:100%">
+					<img src="./images/portada/p3.jpg" style="width:100%">
 					<div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
 					<div class="numbertext"></div>
-					<img src="./images/chi3.jpeg" style="width:100%">
+					<img src="./images/portada/p2.jpg" style="width:100%">
 					<div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
 					<div class="numbertext"></div>
-					<img src="./images/boy1.jpeg" style="width:100%">
+					<img src="./images/portada/p1.jpg" style="width:100%">
 					<div class="text"></div>
 				</div>
 
