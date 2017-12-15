@@ -263,14 +263,30 @@ button[type=submit] {
 
 @media screen and (min-width: 830px){
 	.main-header img {
-		width: 50%;
+		max-width: 100%;
 	}
 }
 
 @media screen and (max-width: 830px){
 	.main-header img {
-		width: 80%;
+		max-width: 100%;
+    display:inline-block;
 	}
+  .carousel{
+    display:none;
+  }
+  .historia{
+    max-width: 95%;
+  }
+  .main-footer{
+    max-width: 100%;
+  }
+  .servicio{
+    display:none;
+  }
+  .main-footer{
+    display: block;
+  }
 }
 
 
@@ -444,5 +460,21 @@ button[type=submit] {
 	background-color:lightgrey;
 	font-family: sans-serif;
 }
+.contacto{
+    border-style: groove;
+  margin: 0 auto;
+  width: 500px;
+  background-color:lightgrey;
+  font-family: sans-serif;
+}
+
+.consumidor{
+  border-style: groove;
+  margin: 0 auto;
+  width: 500px;
+  background-color:lightgrey;
+  font-family: sans-serif;
+}
+
 
 }

@@ -9,9 +9,21 @@
 <body>
 @include('recursos/header')
 <br>
+<br>
+<div class= "contacto">
+<center>
+<h1>Contactanos</h1>
+<h2>+54 11 0345 455 8511</h2>
+<h2>+54 11 0678 768 9847</h2> 
+<br>
+<h1>Escribinos</h1>
+<h2>info@fuome.com.ar</h2>
+</center>
+</div>
+<br>
+<br>
 
 
-FALTA CONTENIDO DEL CONTACTO
 
 
 @include('recursos/footer')

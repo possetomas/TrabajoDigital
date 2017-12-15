@@ -9,10 +9,11 @@
 <body>
 @include('recursos/header')
 <br>
+<br>
 <div class = "historia">
 <center>
 <h1>HISTORIA</h1>	
-FUOME arranca en el año 2017 con clara vocacion internacional y con la intencion de vestir a jovenes comprometidos con su entorno, que viven en comunidad y se relacionan entre si. Jovenes que visten de forma relajada, huyendo de los esteriotipos y que quieren sentirse bien con lo que llevan. Para ellos FUOME recoge las ultimas tendencias internacionales, las mezcla con las influencias que marca la calle y los clubs de moda, y las reinterpreta a su estilo para transformarlas en prendas comodas y facilas de llevar. 
+FUOME arranca en el año 1987 con clara vocacion internacional y con la intencion de vestir a jovenes comprometidos con su entorno, que viven en comunidad y se relacionan entre si. Jovenes que visten de forma relajada, huyendo de los esteriotipos y que quieren sentirse bien con lo que llevan. Para ellos FUOME recoge las ultimas tendencias internacionales, las mezcla con las influencias que marca la calle y los clubs de moda, y las reinterpreta a su estilo para transformarlas en prendas comodas y facilas de llevar. 
 
 FUOME evoluciona de forma paralela a su cliente, siempre atento a las nuevas tecnologias, los moviemientos sociales y a las ultimas tendencias artisiticas o musicales. Todo esto se ve reflejado ya no solo en sus diseños, sino tambien en las tiendas. Inspirada en la mitica ciudad de Barcelona, la renovacion de la oferta es constante.
 <br>

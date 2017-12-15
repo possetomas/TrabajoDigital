@@ -1,4 +1,6 @@
-<script type="text/javascript" src="/js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/cliente.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="carousel">
 			<div class="slideshow-container">
 
 				<!-- Full-width images with number and caption text -->
@@ -33,3 +35,5 @@
 				<span class="dot" onclick="currentSlide(2)"></span>
 				<span class="dot" onclick="currentSlide(3)"></span>
 			</div>
+</div>
+<script type="text/javascript" src="/js/script.js"></script>
