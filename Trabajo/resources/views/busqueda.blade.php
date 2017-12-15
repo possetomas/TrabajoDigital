@@ -22,8 +22,34 @@
         <div class="fotos" style="    margin-right: 0;
     margin-left: 0px;">
         <center>
-        <div class="fotofil">
+        <div class="fotofil" style="margin-left: 0px; margin-right: 0px;">
 
+        	@if($productos == "[]")
+
+        	<h1>No hay productos para "<?php echo $_GET["busqueda"] ?>"</h1><br>
+        </div>
+<h5 style="bottom: 15px; position: relative;">Segui viendo mas productos...</h2>
+<div>
+	<div class="fotos" style="margin-right: 0px; margin-left: 0px; */">
+		
+		<div class="fotofil">
+        	<img class="foto" src="./images/productos/mujer/01aa.jpeg">
+        	<img class="foto" src="./images/productos/mujer/02aa.jpeg">
+        	<img class="foto" src="./images/productos/mujer/03aa.jpeg">
+        	<img class="foto" src="./images/productos/mujer/04aa.jpeg">
+        </div>
+        <a href="{{ route('mujer') }}"><h4 style="text-decoration: underline;">Ir a la categoria de mujeres</h4></a>
+        
+        	<img class="foto" src="./images/productos/hombre/01aa.jpeg">
+        	<img class="foto" src="./images/productos/hombre/02aa.jpeg">
+        	<img class="foto" src="./images/productos/hombre/03aa.jpeg">
+        	<img class="foto" src="./images/productos/hombre/04aa.jpeg">
+        </div>
+        <a href="{{ route('hombre') }}"><h4 style="text-decoration: underline;">Ir a la categoria de hombres</h4></a>
+        <div class="fotofil">
+    </div>
+</div>
+        	@endif
 
 
 
@@ -35,10 +61,12 @@
         	onmouseout="this.src='{{ $productoChunk->urlfoto2 }}'">
         	<br>
         	<h5 class="textfot"><a>{{ $productoChunk->nombre }}</a></h5>
-        	<h5 class="textfot"><a>{{ $productoChunk->precio }}</a></h5>
+        	<h6 class="textfot"><a>Color: {{ $productoChunk->color }}</a></h6>
+            <h5 class="textfot"><a>${{ $productoChunk->precio }}</a></h5>
         	@if ( empty ($producto) )
         	<a href="{{ route('producto.agregarAlCarro', ['id' => $productoChunk->id]) }}"><img style="width: 20px; position: relative; left: 90px; top: -80px;" src="./images/carrito.svg"></a>
         	@endif
+
         	</div>
 <br>
         	<div class="fotofil">
@@ -59,7 +87,8 @@
             onmouseout="this.src='{{ $productoChunk->urlfoto2 }}'">
             <br>
             <h5 class="textfot"><a>{{ $productoChunk->nombre }}</a></h5>
-            <h5 class="textfot"><a>{{ $productoChunk->precio }}</a></h5>
+            <h6 class="textfot"><a>Color: {{ $productoChunk->color }}</a></h6>
+            <h5 class="textfot"><a>${{ $productoChunk->precio }}</a></h5>
             @if ( empty ($producto) )
             <a href="{{ route('producto.agregarAlCarro', ['id' => $productoChunk->id]) }}"><img style="width: 20px; position: relative; left: 90px; top: -80px;" src="./images/carrito.svg"></a>
             @endif

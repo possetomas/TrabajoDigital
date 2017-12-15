@@ -28,7 +28,8 @@
         	onmouseout="this.src='{{ $productoChunk->urlfoto2 }}'">
         	<br>
         	<h5 class="textfot"><a>{{ $productoChunk->nombre }}</a></h5>
-        	<h5 class="textfot"><a>{{ $productoChunk->precio }}</a></h5>
+            <h6 class="textfot"><a>Color: {{ $productoChunk->color }}</a></h6>
+        	<h5 class="textfot"><a>${{ $productoChunk->precio }}</a></h5>
         	@if ( empty ($producto) )
         	<a href="{{ route('producto.agregarAlCarro', ['id' => $productoChunk->id]) }}"><img style="width: 20px; position: relative; left: 90px; top: -80px;" src="./images/carrito.svg"></a>
         	@endif
@@ -52,7 +53,8 @@
             onmouseout="this.src='{{ $productoChunk->urlfoto2 }}'">
             <br>
             <h5 class="textfot"><a>{{ $productoChunk->nombre }}</a></h5>
-            <h5 class="textfot"><a>{{ $productoChunk->precio }}</a></h5>
+            <h6 class="textfot"><a>Color: {{ $productoChunk->color }}</a></h6>
+            <h5 class="textfot"><a>${{ $productoChunk->precio }}</a></h5>
             @if ( empty ($producto) )
             <a href="{{ route('producto.agregarAlCarro', ['id' => $productoChunk->id]) }}"><img style="width: 20px; position: relative; left: 90px; top: -80px;" src="./images/carrito.svg"></a>
             @endif

@@ -7,12 +7,22 @@ use Session;
 
 class CarritoController extends Controller
 {
-    public function compras(){
-    	return view ('carrito');
+    public function compras($id = null){
+
+    	if ($id) {
+	    	$carro = session()->get('carro');
+	    	unset($carro->items[$id]);
+	    	session()->forget('carro');
+	    	session()->put('carro', $carro);
+    		return redirect()->route('carrito');
+    	} else {
+    		return view('carrito');
+    	}
     }
 
     public function descartar(){
     	Session::flush();
     	return view ('carrito');
     }
+
 }

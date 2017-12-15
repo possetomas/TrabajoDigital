@@ -27,7 +27,7 @@
 				<h5>${{ $item['precio'] }}</h5>
 				<h6 class="h62">{{ $item['color'] }}</h6>
 				<img src="{{ $item['urlfoto'] }}">
-				<button onclick=" {{ Session::forget('precioTotal') }}">Descartar producto</button>
+				<button onclick="window.location = '{{ route('carrito', $item['id'], $item['precio']) }}'">Descartar producto</button>
 				<h6 class="h63">Cantidad: {{ $item['cantidad'] }}</h6>
 				</div>
 				@endforeach

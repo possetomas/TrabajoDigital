@@ -44,7 +44,7 @@ Route::get('/servicio', 'ServicioController@consumidor');
 
 Route::get('/contacto', 'ContactoController@index');
 
-Route::get('/carrito', 'CarritoController@compras');
+Route::get('/carrito/{id?}', 'CarritoController@compras')->name('carrito');
 
 Route::post('/carrito', 'CarritoController@descartar');
 
